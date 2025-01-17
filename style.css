@@ -1,0 +1,175 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #03624C;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav .logo {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e9c46a;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9f5f2;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #03624C;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #03624C;
+    margin-bottom: 20px;
+}
+
+#services .service-item,
+#gallery .gallery-item {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#services img,
+#gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#services .service-item p,
+#gallery .gallery-item p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+#gallery .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+#gallery .gallery-item img {
+    border-bottom: 1px solid #ddd;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #03624C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #e9c46a;
+    color: #03624C;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info a {
+    color: #03624C;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #03624C;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e9c46a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #03624C;
+    color: white;
+    font-size: 14px;
+}
