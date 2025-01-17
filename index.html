@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adamoo Graphic</title>
+    <style>
+        /* Style général */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #03624C;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e9c46a;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e9f5f2;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #03624C;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #03624C;
+            margin-bottom: 20px;
+        }
+
+        #services .service-item,
+        #gallery .gallery-item {
+            display: inline-block;
+            margin: 10px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+            text-align: center;
+        }
+
+        #services img,
+        #gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        #services .service-item p,
+        #gallery .gallery-item p {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        #gallery .gallery-item:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        #gallery .gallery-item img {
+            border-bottom: 1px solid #ddd;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #03624C;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: #e9c46a;
+            color: #03624C;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-info a {
+            color: #03624C;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #03624C;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #e9c46a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #03624C;
+            color: white;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Votre contenu HTML reste inchangé -->
+</body>
+</html>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <img src="logo.png" alt="Logo Adamoo Graphic" class="logo"> <!-- Remplacez 'logo.png' par votre propre image -->
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Bienvenue chez Adamoo Graphic</h1>
+        <p>Nous sommes spécialisés dans le design graphique, l’impression, le génie logiciel, le marketing digital, et les formations.</p>
+    </header>
+
+    <section id="services">
+    <h2>Mes Services</h2>
+    <div class="service-item">
+        <img src="affiche.jpg" alt="Création d'affiches">
+        <p>Flyer, Identité visuelle, Branding, Charte graphique, Vidéo publicitaire, etc.</p>
+    </div>
+    <div class="service-item">
+        <img src="logo.jpg" alt="Création de logos">
+        <p>Création de logos professionnels, cartes de visite, faire-part, etc.</p>
+    </div>
+    <div class="service-item">
+        <img src="graphisme.jpg" alt="Graphisme">
+        <p>Design pour divers supports : brochures, tee-shirts, bannières, etc.</p>
+    </div>
+    <div class="service-item">
+        <img src="developpement.jpg" alt="Génie logiciel">
+        <p>Développement d’applications, création de sites internet et maquettes.</p>
+    </div>
+    <div class="service-item">
+        <img src="marketing.jpg" alt="Marketing digital">
+        <p>Publicité, gestion de comptes réseaux sociaux, Community Management.</p>
+    </div>
+    <div class="service-item">
+        <img src="formation.jpg" alt="Formation">
+        <p>Formation dans les logiciels de graphisme et plus.</p>
+    </div>
+</section>
+
+   <!-- Section Galerie -->
+<section id="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery-item">
+        <img src="affiche_example.jpg" alt="Exemple d'affiche">
+        <p>Affiche réalisée pour un client satisfait.</p>
+    </div>
+    <div class="gallery-item">
+        <img src="logo_example.jpg" alt="Exemple de logo">
+        <p>Un de mes logos personnalisés pour un projet unique.</p>
+    </div>
+    <div class="gallery-item">
+        <img src="website_example.jpg" alt="Exemple de site web">
+        <p>Site web conçu pour un client professionnel.</p>
+    </div>
+    <div class="gallery-item">
+        <img src="cv_example.jpg" alt="Exemple de CV">
+        <p>Création de CV personnalisé pour un client.</p>
+    </div>
+</section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="mailto:adamoographic@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div class="contact-info">
+            <p>Vous pouvez aussi me contacter directement :</p>
+            <p>Téléphone : <a href="tel:+2250150999450">0150999450</a></p>
+            <p>Email : <a href="mailto:adamoographic@gmail.com">adamoographic@gmail.com</a></p>
+        </div>
+        
+        <!-- Icônes des réseaux sociaux (Modifiable avec vos logos) -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ilAdamooGraphic" target="_blank">
+                <img src="facebook-logo.png" alt="Facebook" style="width: 30px; height: 30px;"> <!-- Remplacez 'facebook-logo.png' par votre propre image -->
+            </a>
+            <a href="https://www.tiktok.com/@Adamoographic" target="_blank">
+                <img src="tiktok-logo.png" alt="TikTok" style="width: 30px; height: 30px;"> <!-- Remplacez 'tiktok-logo.png' par votre propre image -->
+            </a>
+            <a href="https://www.instagram.com/Adamoographic" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram" style="width: 30px; height: 30px;"> <!-- Remplacez 'instagram-logo.png' par votre propre image -->
+            </a>
+            <a href="https://wa.me/+2250150999450" target="_blank">
+                <img src="whatsapp-logo.png" alt="WhatsApp" style="width: 30px; height: 30px;"> <!-- Remplacez 'whatsapp-logo.png' par votre propre image -->
+            </a>
+            <a href="mailto:adamoographic@gmail.com" target="_blank">
+                <img src="email-logo.png" alt="Email" style="width: 30px; height: 30px;"> <!-- Remplacez 'email-logo.png' par votre propre image -->
+            </a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        &copy; 2025 Adamoo Graphic. Tous droits réservés.  "Nous faisons de vos rêves une réalité."
+    </footer>
+
+    <!-- Ajout du JavaScript -->
+    <script>
+        // Fonction pour ajouter une animation de défilement au lien de navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Récupérer l'ID de la section à afficher
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                // Déplacer la page en douceur vers la section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fonction pour valider le formulaire avant soumission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function (e) {
+            const name = document.querySelector('input[name="nom"]');
+            const email = document.querySelector('input[name="email"]');
+            const message = document.querySelector('textarea[name="message"]');
+
+            // Vérifier si tous les champs sont remplis
+            if (name.value === '' || email.value === '' || message.value === '') {
+                e.preventDefault(); // Annuler l'envoi si des champs sont vides
+                alert("Tous les champs doivent être remplis !");
+            }
+        });
+
+        // Fonction pour afficher un message de confirmation après envoi du formulaire
+        form.addEventListener('submit', function () {
+            alert("Votre message a été envoyé avec succès.");
+        });
+    </script>
+</body>
+</html>
