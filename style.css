@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Barre de navigation */
 nav {
     background-color: #03624C;
     color: white;
@@ -46,6 +47,7 @@ nav ul li a:hover {
     color: #e9c46a;
 }
 
+/* En-tête */
 header {
     text-align: center;
     padding: 50px 20px;
@@ -57,6 +59,7 @@ header h1 {
     color: #03624C;
 }
 
+/* Sections */
 section {
     padding: 40px 20px;
     text-align: center;
@@ -78,7 +81,6 @@ section h2 {
     overflow: hidden;
     background-color: white;
     text-align: center;
-    transition: transform 0.3s ease;
 }
 
 #services img,
@@ -94,16 +96,16 @@ section h2 {
     color: #333;
     background-color: #f9f9f9;
     margin: 0;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-#gallery .gallery-item:hover {
-    transform: scale(1.05);
+#services .service-item p:hover,
+#gallery .gallery-item p:hover {
+    color: #e9c46a; /* Couleur jaune au survol */
 }
 
-#gallery .gallery-item img {
-    border-bottom: 1px solid #ddd;
-}
-
+/* Formulaire de contact */
 form {
     margin: 0 auto;
     max-width: 500px;
@@ -135,6 +137,7 @@ form button:hover {
     color: #03624C;
 }
 
+/* Informations de contact */
 .contact-info {
     margin-top: 20px;
     font-size: 16px;
@@ -150,6 +153,7 @@ form button:hover {
     text-decoration: underline;
 }
 
+/* Icônes des réseaux sociaux */
 .social-icons {
     margin-top: 20px;
 }
@@ -166,10 +170,22 @@ form button:hover {
     color: #e9c46a;
 }
 
+/* Pied de page */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #03624C;
     color: white;
     font-size: 14px;
+}
+
+/* Ajout de la classe visible pour les animations */
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
